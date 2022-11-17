@@ -1,0 +1,96 @@
+<html>
+
+<head>
+	<title>Resale Value Prediction</title>
+	<style>
+		.header {
+			top: 0px;
+			margin: 0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background: #e65858;
+			color: rgb(14, 13, 13);
+			overflow: hidden;
+			padding-bottom: 30px;
+			font-size: 2.25vw;
+			width: 100%;
+			padding-left: 0px;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		.second {
+			top: 80px;
+			bottom: 0px;
+			margin: 0px;
+			left: 0px;
+			right: 0%;
+			position: fixed;
+			padding: 0px;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url('/static/img.jpg');
+		}
+
+
+		.inside {
+			top: 80px;
+			bottom: 0px;
+			margin: 0px;
+			left: 58.5%;
+			right: 0%;
+			position: fixed;
+			padding-left: 40px;
+			padding-top: 8%;
+			padding-right: 50px;
+			background-color: #E4EEFF;
+			font-family: Georgia, serif;
+			color: black;
+			font-size: 20px;
+			text-align: justify;
+
+		}
+
+		.myButton {
+			border: none;
+			text-align: center;
+			cursor: pointer;
+			text-transform: uppercase;
+			outline: none;
+			overflow: hidden;
+			color: rgb(2, 2, 2);
+			font-weight: 700;
+			font-size: 12px;
+			background-color: #e65858;
+			padding: 10px 15px;
+			margin: 0 auto;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">CAR RESALE VALUE PREDICTION</div>
+	<div class="second">
+		<div class="inside">It is expected that sales of reconditioned used cars would rise in light of the current
+			challenging economic climate. Leasing cars rather than buying them entirely is a prevalent practise in the
+			majority of the world's nations. A lease is a legally binding agreement between a buyer and a seller in
+			which the buyer agrees to pay the seller/financier in fixed monthly or annual instalments. After the lease
+			term is up, the buyer will have the option of purchasing the vehicle for its residual value, or anticipated
+			resale value. Therefore, the ability for sellers and financiers to accurately anticipate the residual value
+			of cars is of commercial relevance.Thus, this application helps to seller/financers to be able to predict
+			the residual value of cars with accuracy..
+			<br><br><br>
+			<div style="margin-left:17%">
+				<a href="{{url_for('predict')}}"><button type="button" class="myButton">Predict the resale value of
+						your car</button></a>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+</html>
